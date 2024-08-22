@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산해들</title>
+  <link rel="stylesheet" href="./css/seas.css">
+</head>
+<body>
+  <div class="haeder">
+    <div class="menu">
+      <img src="./img/logo.png" alt="산해들logo">
+      <ul class="menu_item">
+        <li><a href="#">장맛산해들 소개</a></li>
+        <li><a href="#">가정용소스 소개</a></li>
+        <li><a href="#">영업용소스 소개</a></li>
+        <li><a href="#">담선총판본부</a></li>
+        <li><a href="#">담선전수창업문의</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">온라인몰</a></li>
+      </ul>
+      <div class="menu_button">
+        <!-- 이미지 스와이프 -->
+        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2ZvWtUQRTFJxpELYKECCoSxcIijVUEA3YqJlWiRYT0+geE2KfwI/EjWMQNPqOVsTCNiqKgtma1V8FGImn8wg90sxH9yZh5cn3ct7vv7dvdWdgDyy6cs3fOmWHvzJs1poUWWsgcwBHgCfDVveznIeM7gDVAjnhcthrjI4A2YIbyuOZdCFZn3hqTuAFsBbYBc96GQJ/5q9Kg00x7GQIIIsauaMbcKgVehQB2RwwFpQx5FwLYCLx2RnKVGPEiBLAP2OI+bwB2Jfx+Y0KwOvCsG/CT7TJV1grqFiKmVe7JoGZQ8xAx5mcyrB3ULERMn5/NcpbQ94nrVY9RD/OZhXBb/n2ggL8oAPfU5uGIZsFdLYBti82CD1qAV0LQazwDsFf4e6kJbgrBceMZgBPC35wmOCkEOeMZ+L8bjmmCg0KwYDwDkBf+DmiCLiH4DqxVNJPAsn2PGeSCa3WTSTgL4JzjJ0wEQDvwQ/jrimpC4aIQ9Sh8WGTFFlX4ouOLCbl2V/Pv5JV57lhUzTvhbSEcUfglwXcr/D8k5LoFvaTwHcB7x18qFWBcFDqv8AuC78swQF+535+7INivrbwUDYpCjxV+XvDDGQY4JuhbJi2AHaKQ3ZnbIvyU4EczDDAm6IupA7hiH0WxnRFuVHBTaQNUiSLwDBiIC/BIiAcj3LDg5isNYAcje/wG+uP6cYjxJD+2EgGeUxvktQAjQnAnYbuLCxDuARadpgoAnaLWsiboEYK3yoYTmvmmfDd8GCpUEiwtStazRwh3lAixOcJPxB0ngFM2mH2PGzBrmJiET4XmUOqpamCAaaE504wBjgrNO2B7VgGqqROikgDrgDdCZy9wh4BNphkCWNiHBuBnilX9BTwE1jc0gDjcfSYdehseQFx4nQVeVHjpZVfgQWQF6reR1QLu8JUEK/Z/NqXO6cgk5usVYMAdvpKiI3J3ajfJELbe4boEcAb63c1CscIVCJQadqf/4p4M62e+lvgDCmxjWI3Bt+wAAAAASUVORK5CYII="> -->
+        <a href="#" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2ZvWtUQRTFJxpELYKECCoSxcIijVUEA3YqJlWiRYT0+geE2KfwI/EjWMQNPqOVsTCNiqKgtma1V8FGImn8wg90sxH9yZh5cn3ct7vv7dvdWdgDyy6cs3fOmWHvzJs1poUWWsgcwBHgCfDVveznIeM7gDVAjnhcthrjI4A2YIbyuOZdCFZn3hqTuAFsBbYBc96GQJ/5q9Kg00x7GQIIIsauaMbcKgVehQB2RwwFpQx5FwLYCLx2RnKVGPEiBLAP2OI+bwB2Jfx+Y0KwOvCsG/CT7TJV1grqFiKmVe7JoGZQ8xAx5mcyrB3ULERMn5/NcpbQ94nrVY9RD/OZhXBb/n2ggL8oAPfU5uGIZsFdLYBti82CD1qAV0LQazwDsFf4e6kJbgrBceMZgBPC35wmOCkEOeMZ+L8bjmmCg0KwYDwDkBf+DmiCLiH4DqxVNJPAsn2PGeSCa3WTSTgL4JzjJ0wEQDvwQ/jrimpC4aIQ9Sh8WGTFFlX4ouOLCbl2V/Pv5JV57lhUzTvhbSEcUfglwXcr/D8k5LoFvaTwHcB7x18qFWBcFDqv8AuC78swQF+535+7INivrbwUDYpCjxV+XvDDGQY4JuhbJi2AHaKQ3ZnbIvyU4EczDDAm6IupA7hiH0WxnRFuVHBTaQNUiSLwDBiIC/BIiAcj3LDg5isNYAcje/wG+uP6cYjxJD+2EgGeUxvktQAjQnAnYbuLCxDuARadpgoAnaLWsiboEYK3yoYTmvmmfDd8GCpUEiwtStazRwh3lAixOcJPxB0ngFM2mH2PGzBrmJiET4XmUOqpamCAaaE504wBjgrNO2B7VgGqqROikgDrgDdCZy9wh4BNphkCWNiHBuBnilX9BTwE1jc0gDjcfSYdehseQFx4nQVeVHjpZVfgQWQF6reR1QLu8JUEK/Z/NqXO6cgk5usVYMAdvpKiI3J3ajfJELbe4boEcAb63c1CscIVCJQadqf/4p4M62e+lvgDCmxjWI3Bt+wAAAAASUVORK5CYII');">shop</a>
+      </div>
+    </div>
+    <div class="mine_meun" style="background-image: url('./img/menu.png')";>
+      <div class="mine_title">
+        <p>자연으로 만든 착한 육수</p>
+        <img src="./img/logo_2.png" alt="logo" width="400px" height="140px">
+        <h1>우리아이에게 먹일 수 있는<br>자연으로 만든 착한 육수</h1>
+      </div>
+    </div>
+  </div>
+  <div class="introduction">
+    <div class="int_title">
+      <h2>영업용 소스소개</h2>
+      <p>산해들에서는 모두를 만족시킬 특별한 메뉴들이 준비되어있습니다.</p>
+    </div>
+    <div class="int_button">
+      <ul class="int_button_li">
+        <li><a href="#">육수용</a></li>
+        <li><a href="#">면요리용</a></li>
+        <li><a href="#">찌개&middot조림용</a></li>
+        <li><a href="#">찜&middot볶음용</a></li>
+        <li><a href="#">전문점용</a></li>
+        <li><a href="#">분식용</a></li>
+        <li><a href="#">찍장용</a></li>
+        <li><a href="#">국밥용</a></li>
+      </ul>
+    </div>
+    <div class="int_mine_title">
+      <div class="mine_titne">
+        <h3>육수용</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt ea quibusdam, iure facilis incidunt iusto optio, hic accusantium harum repudiandae quod nostrum aliquam necessitatibus repellendus accusamus esse, amet illo!</p>
+        <a href="#">육수용 소스 전체보기 ></a>
+      </div>
+      <!-- 이미지 스와이프 -->
+      <div class="int_img">
+        <div class="div_img" style="background-image: url('./img/int01.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int02.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int04.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int05.png');"></div>
+      </div>
+    </div>
+    <div class="int_title">
+      <h2>가정용 소스소개</h2>
+      <p>자연을 담았습니다.</p>
+    </div>
+    <div class="int_mine_title">
+      <div class="mine_titne">
+        <h3>육수용</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt ea quibusdam, iure facilis incidunt iusto optio, hic accusantium harum repudiandae quod nostrum aliquam necessitatibus repellendus accusamus esse, amet illo!</p>
+        <a href="#">육수용 소스 전체보기 ></a>
+      </div>
+      <!-- 이미지 스와이프 -->
+      <div class="int_img"> 
+        <div class="div_img" style="background-image: url('./img/int01.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int03.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int02.png');"></div>
+        <div class="div_img" style="background-image: url('./img/int05.png');"></div>
+      </div>
+    </div>
+  </div>
+  <div class="business_areas" style="background-image: url('./img/business.png');">
+    <div class="business_title">
+      <h2>주요사업분야</h2>
+      <p>함께 생각하고 함께 고민하고 함께 살아가는 산해들</p>
+    </div>
+    <div class="business_group_up">
+      <div class="business_g">
+        <img src="./img/icon01.png" alt="icon">
+        <br>
+        <p>소스개발</p>
+        <br>
+        <hr>
+        <br>
+        <p>아직도 육수를 만드는데 애쓰고 계시나요? 다른 조미료도 필요가 없습니다.  기존의 맛과는 차원이 다른 산해들의 솜</p>
+      </div>
+      <div class="business_g">
+        <img src="./img/icon02.png" alt="icon">
+        <br>
+        <p>OEM</p>
+        <br>
+        <hr>
+        <br>
+        <p>맞춤형 소스 별도 생산가능합니다.  다양한 메뉴에 적절히 사용할 수 있도록 상담을 통해 적합한 소스를 공급합니다.</p>
+      </div>
+      <div class="business_g">
+        <img src="./img/icon03.png" alt="icon">
+        <br>
+        <p>메뉴개발</p>
+        <br>
+        <hr>
+        <br>
+        <p>신 메뉴 개발에 고민하고 계시나요? 오픈을 준비중이신가요?  기존 메뉴의 맛을 향상하는 방법을 함께 고민해드립니다</p>
+      </div>
+    </div>
+    <div class="business_group_dvwn">
+      <div class="business_g">
+        <img src="./img/icon04.png" alt="icon">
+        <br>
+        <p>창업솔루션</p>
+        <br>
+        <hr>
+        <br>
+        <p>창업 전수비, 가맹비가 없습니다. 메뉴 기획부터 오픈까지  완벽하게 도와드립니다.</p>
+      </div>
+      <div class="business_g">
+        <img src="./img/icon05.png" alt="icon">
+        <br>
+        <p>브랜드 컨설팅</p>
+        <br>
+        <hr>
+        <br>
+        <p>착하고 참신한 요식업 브랜드를 만들어 드립니다. 다양한 전문점들의 개업과 발전을 함께 했습니다. 오랜 노하우로 산</p>
+      </div>
+    </div>
+    <a href="#">전수창업개설문의 ></a>
+  </div>
+  <div class="inquiry">
+    <div class="inquiry_title">
+      <h1>온라인개설 문의</h1>
+      <p>성공적인 사업을 위한 첫걸음</p>
+    </div>
+    <div class="inquiry_item">
+      <div class="inquiry_img" style="background-image: url(./img/inquiry.png);">
+        <p><strong>동반자</strong>로 함께 고민하고</p> 
+        <p>연구하고 개발하고</p>
+        <br>
+        <strong>같이 요리하는</strong>
+          <strong>즐거움을 담겠습니다.</strong>
+      </div>
+      <form action="">
+        <label for="inquiry">문의유형</label>
+        <br>
+        <select name="inquiry" id="inquiry">
+          <option value="0">선택</option>
+          <option value="1">문의/의견</option>
+          <option value="2">배송관련</option>
+        </select>
+        <br>
+        <label for="name">이름</label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="tel">전화번호</label>
+        <br>
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <label for="text">희망계설지역</label>
+        <br>
+        <input type="text" name="text" id="text">
+        <br>
+        <label for="num">예상견적</label>
+        <br>
+        <input type="number" name="num" id="num">
+        <br>
+        <p>기타문의 내용</p>
+      </form>
+      <div class="input">
+        <textarea name="detail" id="detail" cols="60" rows="15"></textarea>
+        <textarea name="detail" id="detail" cols="60" rows="15"></textarea>
+        <input type="checkbox" name="chk" id="chk">
+        <label for="chk">개인정보수집관련 동의</label>
+        <a href="#">전수창업개설문의 ></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_first">
+      <p>개인정보취급방침</p>
+      <p>이용약관</p>
+      <p>산해들소개</p>
+    </div>
+    <div class="footer_center">
+      <p>상호 : 산해들</p>
+      <p>대표 : 강시연</p>
+      <p>1공장 : 대구광역시 북구 구암로42길 11, 1,2층(구암동)</p>
+      <p>2공장 : 경북 칠곡군 지천면 금호자원길 16-46</p>
+      <p>사업자등록번호 : 424-16-00153</p>
+    </div>
+    <div class="footer_last">
+      <p>대표번호. 1522-2542  : 소스상담. 010-8255-8525</p>
+      <p>팩스 : 053-352-2585</p>
+      <p>이메일 : ksy03277@naver.com</p>
+    </div>
+    <span>COpyright(C)2022 <strong style="color: red;">산해들</strong> .All rights reseved.     </span>
+  </div>
+</body>
+</html>
+
+<!-- 2024.03.24 -->
