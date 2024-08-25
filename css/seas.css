@@ -137,7 +137,7 @@ li {
 .swiper3-button-next svg, 
 .swiper3-button-prev svg {
   position: absolute;
-  top: 93rem;
+  top: 92rem;
   z-index: 10;
   color: #fff;
   background-color: #00000075;
@@ -146,7 +146,7 @@ li {
   right: 1rem; /* 오른쪽 위치 */
 }
 .swiper3-button-prev svg {
-  left: 37rem;
+  left: 41rem;
 }
 
 .swiper2-button-next::after,
@@ -157,7 +157,7 @@ li {
 .swiper2-button-next svg, 
 .swiper2-button-prev svg {
   position: absolute;
-    top: 130rem;
+    top: 128rem;
     z-index: 10;
     color: #fff;
     background-color: #00000075;
@@ -166,7 +166,7 @@ li {
   right: 1rem; /* 오른쪽 위치 */
 }
 .swiper2-button-prev svg {
-  left: 37rem;
+  left: 41rem;
 }
 
 
