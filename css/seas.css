@@ -38,17 +38,17 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 3rem;
   background-color: #8db64d;
-  height: 50px;
-  width: 120px;
+  height: 45px;
+  width: 110px;
   border-radius: 30px;
   gap: 5px;
   color: #fff;
   margin-top: 20px;
-  background-repeat: no-repeat;
-  background-size: 2rem;
-  background-position: left;
+}
+.size-6 {
+  width: 1.5rem;
 }
 .mine_meun {
   display: grid;
@@ -88,22 +88,39 @@ li {
   background-color: #6ab4e1;
 }
 
+.swiper-horizontal {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide:last-child {
+  margin-right: 0;
+}
 /* introduction-title */
 .int_mine_title {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   margin-top: 4rem;
 }
 .mine_titne {
-  margin-left: 5rem;
+  display: flex;
+  margin: 2rem 5rem;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .mine_titne > a {
   position: relative;
   padding: 0.5rem 1rem;
   background-color: #8db64d;
   color: #fff;
-  top: 11.5rem;
+  margin-top: 8rem;
+  /* top: 11.5rem; */
 }
+
+/* 2024-08-25 스와이퍼로 변경을 위해 수정 */
 .div_img {
   display: inline-block;
   width: 11.5rem;
@@ -112,6 +129,47 @@ li {
   background-position: center;
   background-size: cover;
 }
+.swiper3-button-next::after,
+.swiper3-button-prev::after {
+  display: none;
+}
+/* 네비게이션 버튼 */
+.swiper3-button-next svg, 
+.swiper3-button-prev svg {
+  position: absolute;
+  top: 93rem;
+  z-index: 10;
+  color: #fff;
+  background-color: #00000075;
+}
+.swiper3-button-next svg {
+  right: 1rem; /* 오른쪽 위치 */
+}
+.swiper3-button-prev svg {
+  left: 37rem;
+}
+
+.swiper2-button-next::after,
+.swiper2-button-prev::after {
+  display: none;
+}
+/* 네비게이션 버튼 */
+.swiper2-button-next svg, 
+.swiper2-button-prev svg {
+  position: absolute;
+    top: 130rem;
+    z-index: 10;
+    color: #fff;
+    background-color: #00000075;
+}
+.swiper2-button-next svg {
+  right: 1rem; /* 오른쪽 위치 */
+}
+.swiper2-button-prev svg {
+  left: 37rem;
+}
+
+
 
 /* business */
 .business_areas {
@@ -119,6 +177,7 @@ li {
   background-size: cover;
   text-align: center;
   padding: 4rem;
+  margin-top: 7rem;
 }
 .business_title {
   color: #fff;
@@ -144,16 +203,22 @@ li {
   width: 3rem;
 }
 .business_areas > a {
-  position: relative;
-  padding: 0.5rem 1rem;
-  background-color: #8db64d;
-  color: #fff;
-  top: 3rem;
+      /* position: relative; */
+      display: block;
+      width: 12rem;
+      height: 3rem;
+      text-align: center;
+      line-height: 3rem;
+      margin: 3rem auto;
+      /* padding: 0.5rem 1rem; */
+      background-color: #8db64d;
+      color: #fff;
+  
 }
 
 /* inquiry */
 .inquiry {
-  padding: 3rem;
+  padding: 7rem 3rem;
 }
 .inquiry_title {
   text-align: center;

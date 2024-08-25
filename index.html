@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>산해들</title>
   <link rel="stylesheet" href="./css/seas.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
   <div class="haeder">
@@ -22,7 +25,13 @@
       <div class="menu_button">
         <!-- 이미지 스와이프 -->
         <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2ZvWtUQRTFJxpELYKECCoSxcIijVUEA3YqJlWiRYT0+geE2KfwI/EjWMQNPqOVsTCNiqKgtma1V8FGImn8wg90sxH9yZh5cn3ct7vv7dvdWdgDyy6cs3fOmWHvzJs1poUWWsgcwBHgCfDVveznIeM7gDVAjnhcthrjI4A2YIbyuOZdCFZn3hqTuAFsBbYBc96GQJ/5q9Kg00x7GQIIIsauaMbcKgVehQB2RwwFpQx5FwLYCLx2RnKVGPEiBLAP2OI+bwB2Jfx+Y0KwOvCsG/CT7TJV1grqFiKmVe7JoGZQ8xAx5mcyrB3ULERMn5/NcpbQ94nrVY9RD/OZhXBb/n2ggL8oAPfU5uGIZsFdLYBti82CD1qAV0LQazwDsFf4e6kJbgrBceMZgBPC35wmOCkEOeMZ+L8bjmmCg0KwYDwDkBf+DmiCLiH4DqxVNJPAsn2PGeSCa3WTSTgL4JzjJ0wEQDvwQ/jrimpC4aIQ9Sh8WGTFFlX4ouOLCbl2V/Pv5JV57lhUzTvhbSEcUfglwXcr/D8k5LoFvaTwHcB7x18qFWBcFDqv8AuC78swQF+535+7INivrbwUDYpCjxV+XvDDGQY4JuhbJi2AHaKQ3ZnbIvyU4EczDDAm6IupA7hiH0WxnRFuVHBTaQNUiSLwDBiIC/BIiAcj3LDg5isNYAcje/wG+uP6cYjxJD+2EgGeUxvktQAjQnAnYbuLCxDuARadpgoAnaLWsiboEYK3yoYTmvmmfDd8GCpUEiwtStazRwh3lAixOcJPxB0ngFM2mH2PGzBrmJiET4XmUOqpamCAaaE504wBjgrNO2B7VgGqqROikgDrgDdCZy9wh4BNphkCWNiHBuBnilX9BTwE1jc0gDjcfSYdehseQFx4nQVeVHjpZVfgQWQF6reR1QLu8JUEK/Z/NqXO6cgk5usVYMAdvpKiI3J3ajfJELbe4boEcAb63c1CscIVCJQadqf/4p4M62e+lvgDCmxjWI3Bt+wAAAAASUVORK5CYII="> -->
-        <a href="#" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2ZvWtUQRTFJxpELYKECCoSxcIijVUEA3YqJlWiRYT0+geE2KfwI/EjWMQNPqOVsTCNiqKgtma1V8FGImn8wg90sxH9yZh5cn3ct7vv7dvdWdgDyy6cs3fOmWHvzJs1poUWWsgcwBHgCfDVveznIeM7gDVAjnhcthrjI4A2YIbyuOZdCFZn3hqTuAFsBbYBc96GQJ/5q9Kg00x7GQIIIsauaMbcKgVehQB2RwwFpQx5FwLYCLx2RnKVGPEiBLAP2OI+bwB2Jfx+Y0KwOvCsG/CT7TJV1grqFiKmVe7JoGZQ8xAx5mcyrB3ULERMn5/NcpbQ94nrVY9RD/OZhXBb/n2ggL8oAPfU5uGIZsFdLYBti82CD1qAV0LQazwDsFf4e6kJbgrBceMZgBPC35wmOCkEOeMZ+L8bjmmCg0KwYDwDkBf+DmiCLiH4DqxVNJPAsn2PGeSCa3WTSTgL4JzjJ0wEQDvwQ/jrimpC4aIQ9Sh8WGTFFlX4ouOLCbl2V/Pv5JV57lhUzTvhbSEcUfglwXcr/D8k5LoFvaTwHcB7x18qFWBcFDqv8AuC78swQF+535+7INivrbwUDYpCjxV+XvDDGQY4JuhbJi2AHaKQ3ZnbIvyU4EczDDAm6IupA7hiH0WxnRFuVHBTaQNUiSLwDBiIC/BIiAcj3LDg5isNYAcje/wG+uP6cYjxJD+2EgGeUxvktQAjQnAnYbuLCxDuARadpgoAnaLWsiboEYK3yoYTmvmmfDd8GCpUEiwtStazRwh3lAixOcJPxB0ngFM2mH2PGzBrmJiET4XmUOqpamCAaaE504wBjgrNO2B7VgGqqROikgDrgDdCZy9wh4BNphkCWNiHBuBnilX9BTwE1jc0gDjcfSYdehseQFx4nQVeVHjpZVfgQWQF6reR1QLu8JUEK/Z/NqXO6cgk5usVYMAdvpKiI3J3ajfJELbe4boEcAb63c1CscIVCJQadqf/4p4M62e+lvgDCmxjWI3Bt+wAAAAASUVORK5CYII');">shop</a>
+        <!-- <a href="#" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2ZvWtUQRTFJxpELYKECCoSxcIijVUEA3YqJlWiRYT0+geE2KfwI/EjWMQNPqOVsTCNiqKgtma1V8FGImn8wg90sxH9yZh5cn3ct7vv7dvdWdgDyy6cs3fOmWHvzJs1poUWWsgcwBHgCfDVveznIeM7gDVAjnhcthrjI4A2YIbyuOZdCFZn3hqTuAFsBbYBc96GQJ/5q9Kg00x7GQIIIsauaMbcKgVehQB2RwwFpQx5FwLYCLx2RnKVGPEiBLAP2OI+bwB2Jfx+Y0KwOvCsG/CT7TJV1grqFiKmVe7JoGZQ8xAx5mcyrB3ULERMn5/NcpbQ94nrVY9RD/OZhXBb/n2ggL8oAPfU5uGIZsFdLYBti82CD1qAV0LQazwDsFf4e6kJbgrBceMZgBPC35wmOCkEOeMZ+L8bjmmCg0KwYDwDkBf+DmiCLiH4DqxVNJPAsn2PGeSCa3WTSTgL4JzjJ0wEQDvwQ/jrimpC4aIQ9Sh8WGTFFlX4ouOLCbl2V/Pv5JV57lhUzTvhbSEcUfglwXcr/D8k5LoFvaTwHcB7x18qFWBcFDqv8AuC78swQF+535+7INivrbwUDYpCjxV+XvDDGQY4JuhbJi2AHaKQ3ZnbIvyU4EczDDAm6IupA7hiH0WxnRFuVHBTaQNUiSLwDBiIC/BIiAcj3LDg5isNYAcje/wG+uP6cYjxJD+2EgGeUxvktQAjQnAnYbuLCxDuARadpgoAnaLWsiboEYK3yoYTmvmmfDd8GCpUEiwtStazRwh3lAixOcJPxB0ngFM2mH2PGzBrmJiET4XmUOqpamCAaaE504wBjgrNO2B7VgGqqROikgDrgDdCZy9wh4BNphkCWNiHBuBnilX9BTwE1jc0gDjcfSYdehseQFx4nQVeVHjpZVfgQWQF6reR1QLu8JUEK/Z/NqXO6cgk5usVYMAdvpKiI3J3ajfJELbe4boEcAb63c1CscIVCJQadqf/4p4M62e+lvgDCmxjWI3Bt+wAAAAASUVORK5CYII');">shop</a> -->
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+          </svg>
+          shop
+      </a>
       </div>
     </div>
     <div class="mine_meun" style="background-image: url('./img/menu.png')";>
@@ -58,11 +67,27 @@
         <a href="#">육수용 소스 전체보기 ></a>
       </div>
       <!-- 이미지 스와이프 -->
-      <div class="int_img">
-        <div class="div_img" style="background-image: url('./img/int01.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int02.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int04.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int05.png');"></div>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide div_img" style="background-image: url('img/int01.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int02.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int04.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int05.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int01.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int02.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int04.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int05.png');"></div>
+        </div>
+        <div class="swiper3-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="swiper-icon size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg> 
+        </div>
+        <div class="swiper3-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="swiper-icon size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>  
+        </div>
       </div>
     </div>
     <div class="int_title">
@@ -77,11 +102,27 @@
         <a href="#">육수용 소스 전체보기 ></a>
       </div>
       <!-- 이미지 스와이프 -->
-      <div class="int_img"> 
-        <div class="div_img" style="background-image: url('./img/int01.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int03.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int02.png');"></div>
-        <div class="div_img" style="background-image: url('./img/int05.png');"></div>
+      <div class="swiper-container mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide div_img" style="background-image: url('img/int01.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int02.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int04.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int05.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int01.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int02.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int04.png');"></div>
+          <div class="swiper-slide div_img" style="background-image: url('img/int05.png');"></div>
+        </div>
+        <div class="swiper2-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="swiper-icon2 size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg> 
+        </div>
+        <div class="swiper2-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="swiper-icon2 size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>  
+        </div>
       </div>
     </div>
   </div>
@@ -180,12 +221,15 @@
         <input type="number" name="num" id="num">
         <br>
         <p>기타문의 내용</p>
+        <textarea name="detail" id="detail" cols="40" rows="5"></textarea>
       </form>
       <div class="input">
-        <textarea name="detail" id="detail" cols="60" rows="15"></textarea>
-        <textarea name="detail" id="detail" cols="60" rows="15"></textarea>
-        <input type="checkbox" name="chk" id="chk">
-        <label for="chk">개인정보수집관련 동의</label>
+        <textarea name="detail" id="detail" cols="60" rows="15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+        <textarea name="detail" id="detail" cols="60" rows="15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+        <div>
+          <input type="checkbox" name="chk" id="chk">
+          <label for="chk">개인 정보수집관련 동의</label>
+        </div>
         <a href="#">전수창업개설문의 ></a>
       </div>
     </div>
@@ -210,6 +254,78 @@
     </div>
     <span>COpyright(C)2022 <strong style="color: red;">산해들</strong> .All rights reseved.     </span>
   </div>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 4,  // 화면에 보이는 슬라이드 개수
+      spaceBetween: 30,  // 슬라이드 간 간격
+      slidesOffsetBefore: 0, // 슬라이드가 컨테이너를 넘지 않도록 설정
+      grabCursor: true,
+      centeredSlides: false, // 슬라이드를 가운데 정렬하지 않음
+      loop: true, // 루프 비활성화
+      navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev',
+        clickable: true,
+      },
+      slideToClickedSlide: true, // 클릭된 슬라이드로 이동
+      loopFillGroupWithBlank: true, // 그룹을 채우기 위해 빈 슬라이드를 추가
+      breakpoints: {
+          1024: {
+              slidesPerView: 4, // 브라우저 크기가 1024px 이상일 때 4개 슬라이드 표시
+              spaceBetween: 30,
+          },
+          768: {
+              slidesPerView: 3, // 브라우저 크기가 768px 이상일 때 3개 슬라이드 표시
+              spaceBetween: 20,
+          },
+          640: {
+              slidesPerView: 2, // 브라우저 크기가 640px 이상일 때 2개 슬라이드 표시
+              spaceBetween: 10,
+          },
+          320: {
+              slidesPerView: 1, // 브라우저 크기가 320px 이상일 때 1개 슬라이드 표시
+              spaceBetween: 5,
+          }
+      }
+    });
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,  // 화면에 보이는 슬라이드 개수
+      spaceBetween: 30,  // 슬라이드 간 간격
+      slidesOffsetBefore: 0, // 슬라이드가 컨테이너를 넘지 않도록 설정
+      grabCursor: true,
+      centeredSlides: false, // 슬라이드를 가운데 정렬하지 않음
+      loop: true, // 루프 비활성화
+      navigation: {
+        nextEl: '.swiper3-button-next',
+        prevEl: '.swiper3-button-prev',
+        clickable: true,
+      },
+      slideToClickedSlide: true, // 클릭된 슬라이드로 이동
+      loopFillGroupWithBlank: true, // 그룹을 채우기 위해 빈 슬라이드를 추가
+      breakpoints: {
+          1024: {
+              slidesPerView: 4, // 브라우저 크기가 1024px 이상일 때 4개 슬라이드 표시
+              spaceBetween: 30,
+          },
+          768: {
+              slidesPerView: 3, // 브라우저 크기가 768px 이상일 때 3개 슬라이드 표시
+              spaceBetween: 20,
+          },
+          640: {
+              slidesPerView: 2, // 브라우저 크기가 640px 이상일 때 2개 슬라이드 표시
+              spaceBetween: 10,
+          },
+          320: {
+              slidesPerView: 1, // 브라우저 크기가 320px 이상일 때 1개 슬라이드 표시
+              spaceBetween: 5,
+          }
+      }
+    });
+  </script>
+
 </body>
 </html>
 
